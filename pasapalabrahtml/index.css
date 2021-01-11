@@ -1,0 +1,237 @@
+body {
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 900;
+    margin: 0;
+    background-color: lightskyblue;
+    
+}
+
+section {
+  display: flex;
+}
+
+.lettersPanel {
+    position: relative;
+    width: 50%;
+    height: 100%;    
+}
+
+.questionPanel {
+  padding: 2em 0;
+  position: relative;
+  width: 50%;
+  height: 100%;
+  padding: 6em;
+            
+}
+
+.questionPanel .ng-controls {
+  font-weight: 600;
+  margin-top: 5em;  
+}
+
+.questionPanel .question-controls {
+  margin-top: 10em;
+}
+
+.questionPanel .pa-controls {
+  margin-top: 9em;
+}
+
+.questionPanel .icon-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  padding: .25em;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: 2px solid white;  
+}
+
+.circle .item {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    border-color: white;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 50%;
+    background-color: blue;
+    color:white;
+    font-size: 25px;
+    text-align: center;
+
+}
+.circle {
+    position: relative;
+    height: 35em;
+    border-radius: 50%;
+    padding: 0;
+    list-style: none;
+}
+
+.circle > * {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 1.25em;
+    height: 1.25em;
+    margin: -0.625em; 
+}
+
+    .circle > *:nth-of-type(1) {
+      transform: rotate(271deg) translate(9em) rotate(-271deg); }
+    .circle > *:nth-of-type(2) {
+      transform: rotate(285.4deg) translate(9em) rotate(-285.4deg); }
+    .circle > *:nth-of-type(3) {
+      transform: rotate(299.8deg) translate(9em) rotate(-299.8deg); }
+    .circle > *:nth-of-type(4) {
+      transform: rotate(314.2deg) translate(9em) rotate(-314.2deg); }
+    .circle > *:nth-of-type(5) {
+      transform: rotate(328.6deg) translate(9em) rotate(-328.6deg); }
+    .circle > *:nth-of-type(6) {
+      transform: rotate(343deg) translate(9em) rotate(-343deg); }
+    .circle > *:nth-of-type(7) {
+      transform: rotate(357.4deg) translate(9em) rotate(-357.4deg); }
+    .circle > *:nth-of-type(8) {
+      transform: rotate(371.8deg) translate(9em) rotate(-371.8deg); }
+    .circle > *:nth-of-type(9) {
+      transform: rotate(386.2deg) translate(9em) rotate(-386.2deg); }
+    .circle > *:nth-of-type(10) {
+      transform: rotate(400.6deg) translate(9em) rotate(-400.6deg); }
+    .circle > *:nth-of-type(11) {
+      transform: rotate(415deg) translate(9em) rotate(-415deg); }
+    .circle > *:nth-of-type(12) {
+      transform: rotate(429.4deg) translate(9em) rotate(-429.4deg); }
+    .circle > *:nth-of-type(13) {
+      transform: rotate(443.8deg) translate(9em) rotate(-443.8deg); }
+    .circle > *:nth-of-type(14) {
+      transform: rotate(458.2deg) translate(9em) rotate(-458.2deg); }
+    .circle > *:nth-of-type(15) {
+      transform: rotate(472.6deg) translate(9em) rotate(-472.6deg); }
+    .circle > *:nth-of-type(16) {
+      transform: rotate(487deg) translate(9em) rotate(-487deg); }
+    .circle > *:nth-of-type(17) {
+      transform: rotate(501.4deg) translate(9em) rotate(-501.4deg); }
+    .circle > *:nth-of-type(18) {
+      transform: rotate(515.8deg) translate(9em) rotate(-515.8deg); }
+    .circle > *:nth-of-type(19) {
+      transform: rotate(530.2deg) translate(9em) rotate(-530.2deg); }
+    .circle > *:nth-of-type(20) {
+      transform: rotate(544.6deg) translate(9em) rotate(-544.6deg); }
+    .circle > *:nth-of-type(21) {
+      transform: rotate(559deg) translate(9em) rotate(-559deg); }
+    .circle > *:nth-of-type(22) {
+      transform: rotate(573.4deg) translate(9em) rotate(-573.4deg); }
+    .circle > *:nth-of-type(23) {
+      transform: rotate(587.8deg) translate(9em) rotate(-587.8deg); }
+    .circle > *:nth-of-type(24) {
+      transform: rotate(602.2deg) translate(9em) rotate(-602.2deg); }
+    .circle > *:nth-of-type(25) {
+      transform: rotate(616.6deg) translate(9em) rotate(-616.6deg); }
+
+
+.title-container {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -25%);
+}
+
+.title-container .title {
+  color: white;
+  font-size: 2.5rem;
+  display: block; 
+} 
+
+.hidden {
+  display: none;
+}
+
+.circle .correct {
+  background-color: green;
+}
+
+.circle .incorrect {
+  background-color: red;
+}
+
+.scoreboard {
+  margin: 0 0 1em 2em;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreboard .timer {
+  display: block;
+  width: 2.8125em;
+  height: 2.8125em;
+  border: 2px solid white;
+  border-radius: 50%;
+  background-color: blue;
+  color: white;
+  font-weight: 900;
+  line-height: 2.8125em;
+  text-align: center;
+}
+
+.scoreboard .score {
+  display: block;
+  width: 2.8125em;
+  height: 1.6875em;
+  margin-top: .5em;
+  border: 2px solid white;
+  background-color: blue;
+  color: white;
+  font-weight: 900;
+  line-height: 1.6875em;
+  text-align: center;
+}
+
+.questionPanel .btn {
+    display: inline-block;
+    padding: .25em .5em;
+    border: 2px solid white;
+    border-radius: 3px;
+    background-color: blue;
+    color: white;
+    font-weight: 900;
+    line-height: 1.6875em;
+    text-align: center;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.questionPanel .btn:hover {
+  background-color: #004b8d; 
+}
+
+.questionPanel .btn--green {
+  background-color: #9ee379; 
+}
+  
+.questionPanel .btn--green:hover {
+    background-color: #4caf50; 
+}
+
+input {
+  width: 50%;
+  padding: .75em;
+}
+
+
+
+
+
+
+
+

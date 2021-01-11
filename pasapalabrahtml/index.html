@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasapalabra</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <section class="pasapalabra"> 
+        <div class="lettersPanel">
+            <div class="title-container">
+				<p class="title">Pasapalabra</p>
+			</div>
+            <ul class="circle">
+                <li class="item" id="0">A</li>
+                <li class="item" id="1">B</li>
+                <li class="item" id="2">C</li>
+                <li class="item" id="3">D</li>
+                <li class="item" id="4">E</li>
+                <li class="item" id="5">F</li>
+                <li class="item" id="6">G</li>
+                <li class="item" id="7">H</li>
+                <li class="item" id="8">I</li>
+                <li class="item" id="9">J</li>
+                <li class="item" id="10">L</li>
+                <li class="item" id="11">M</li>
+                <li class="item" id="12">N</li>
+                <li class="item" id="13">Ñ</li>
+                <li class="item" id="14">O</li>
+                <li class="item" id="15">P</li>
+                <li class="item" id="16">Q</li>
+                <li class="item" id="17">R</li>
+                <li class="item" id="18">S</li>
+                <li class="item" id="19">T</li>
+                <li class="item" id="20">U</li>
+                <li class="item" id="21">V</li>
+                <li class="item" id="22">X</li>
+                <li class="item" id="23">Y</li>
+                <li class="item" id="24">Z</li>
+            </ul>
+            <ul class="scoreboard">
+				<li id="timer" class="timer" href="">300</li>
+				<li id="score" class="score" href="">0</li>
+			</ul>
+        </div>   
+        <div class="questionPanel">
+            <a id="js--close" class="icon-close hidden">X</a>
+			<div id="js--ng-controls" class="ng-controls">
+				<h2>Bienvenido a Pasapalabra!</h2>
+				<p>Debido a que el objetivo del juego es adivinar las palabras y para evitar confusiones, las respuestas las deberás escribir sin acentos.</p>
+                <p>Para confirmar una respuesta haz clic en el botón "enviar". Para pasar una palabra, haz clic en el botón "pasapalabra".</p>     
+				<a id="js--new-game" class="btn"><i class="icon-play"></i>Jugar</a>
+			</div>
+			<div id="js--question-controls" class="question-controls hidden">
+				<span id="js--hint" class="hint"></span>
+				<p id="js--definition" class="definition"></p>
+
+				<input id="js--user-answer" type="text" placeholder="Introduce tu respuesta">
+
+				<a id="js--send" class="btn btn--green" href="#">Enviar</a>
+				<a id="js--pasapalabra" class="btn" href="#">Pasapalabra</a>
+			</div>
+			<div id="js--pa-controls" class="pa-controls hidden">
+				<p id="js--end-title" class="title"></p>
+				<p id="js--end-subtitle" class="subtitle"></p>
+				<a id="js--pa" class="btn" href=""><i class="icon-loop"></i>Jugar de nuevo</a>
+			</div>
+        </div>
+    </section>  
+<script src="app.js"></script>  
+</body>
+</html>
